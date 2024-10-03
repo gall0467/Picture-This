@@ -37,29 +37,33 @@
     images/square-2400px.jpg
  -->
 
-    <picture>
-      <source media="(max-width: 960px)" srcset="
-          images/landscape-320px.jpg 320w,
-          images/landscape-480px.jpg 480w,
-          images/landscape-640px.jpg 640w,
-          images/landscape-720px.jpg 720w,
-          images/landscape-960px.jpg 960w,
-          images/landscape-1440px.jpg 1440w,
-          images/landscape-1920px.jpg 1920w,
-          images/landscape-2160px.jpg 2160w,
-          images/landscape-2880px.jpg 2880w,">
-          
-      <source media="(min-width: 960px)" srcset="
-          images/square-480px.jpg 480w,
-          images/square-640px.jpg 640w,
-          images/square-960px.jpg 960w,
-          images/square-1280px.jpg 1280w,
-          images/square-1440px.jpg 1440w,
-          images/square-1600px.jpg 1600w,
-          images/square-1920px.jpg 1920w,
-          images/square-2400px.jpg 2400w ">
-      <img src="images/museum.jpg" alt="Museum Image">
-    </picture>
+ <picture>
+  <source media="(max-width: 960px)" srcset="
+        images/landscape-320px.jpg 320w,
+        images/landscape-480px.jpg 480w,
+        images/landscape-640px.jpg 640w,
+        images/landscape-720px.jpg 720w,
+        images/landscape-960px.jpg 960w,
+        images/landscape-1440px.jpg 1440w,
+        images/landscape-1920px.jpg 1920w,
+        images/landscape-2160px.jpg 2160w,
+        images/landscape-2880px.jpg 2880w" 
+        sizes="(max-width: 960px) 100vw">
+
+  <source media="(min-width: 960px)" srcset="
+        images/square-480px.jpg 480w,
+        images/square-640px.jpg 640w,
+        images/square-960px.jpg 960w,
+        images/square-1280px.jpg 1280w,
+        images/square-1440px.jpg 1440w,
+        images/square-1600px.jpg 1600w,
+        images/square-1920px.jpg 1920w,
+        images/square-2400px.jpg 2400w" 
+        sizes="(min-width: 960px) 50vw">
+
+  <img src="images/museum.jpg" alt="Museum Image">
+</picture>
+
     
   </header>
 </body>
